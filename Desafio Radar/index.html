@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Radar de Velocidade</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div>
+      <label>Escolha uma via </label>
+      <select onchange="escolhendoVia(value)" id="select">
+        <option value="0">Veja as opções</option>
+        <option value="30">Rua A - 30km/hr</option>
+        <option value="50">Avenida B - 50km/hr</option>
+        <option value="80">Rodovia C- 80km/hr</option>
+      </select>
+      <button id="comecar" disabled onclick="iniciar(this) ">Começar</button>
+      <button id="finalizar" onclick="parar()" style="display: none">
+        Finalizar
+      </button>
+    </div>
+    <div class="Semaforo">
+      <div id="vermelho" class="Semaforo-vermelho"></div>
+      <div id="amarelo" class="Semaforo-apagado"></div>
+      <div id="verde" class="Semaforo-apagado"></div>
+    </div>
+    <div class="Carro">
+      <img src="images/sport-car-png.webp" alt="" />
+      <p id="carro">Carro parado</p>
+    </div>
+    <div>
+      <button id="acelera" class="Acelera" disabled onclick="acelerando(this)">
+        Acelera
+      </button>
+      <button id="freia" class="Freia" disabled onclick="desacelerando(this)">
+        Freia
+      </button>
+    </div>
+  </body>
+</html>

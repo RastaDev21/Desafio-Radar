@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.Semaforo {
+  width: 60px;
+  height: 90px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.Semaforo-verde {
+  width: 25px;
+  height: 25px;
+  background: forestgreen;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.Semaforo-amarelo {
+  width: 25px;
+  height: 25px;
+  background: #ffff00;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.Semaforo-vermelho {
+  width: 25px;
+  height: 25px;
+  background: red;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.Semaforo-apagado {
+  width: 25px;
+  height: 25px;
+  background: rgba(113, 112, 126, 0.986);
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.Carro {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+img {
+  width: 100px;
+  height: 150px;
+}
+
+.Acelera {
+  background-color: forestgreen;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+}
+
+.Freia {
+  background-color: red;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+}
